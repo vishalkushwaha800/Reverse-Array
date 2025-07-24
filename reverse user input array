@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class reversearray2 {
+    public static void main (String[]args ) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no of elements in your array");
+        int arraysize = sc.nextInt();
+        int [] value  = new int[arraysize];
+        System.out.println("Enter array value ");
+
+        for (int i = 0; i< arraysize; i++){
+            value[i] = sc.nextInt();
+        }
+        System.out.println("Reversed array");
+        for (int i = value.length-1; i>=0; i--) {
+            System.out.println(value[i]);
+        }
+        sc.close();
+
+
+    }
+}
